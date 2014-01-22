@@ -27,6 +27,7 @@ public class Window extends javax.swing.JFrame {
 
     jButton1 = new javax.swing.JButton();
     jButton2 = new javax.swing.JButton();
+    jButton3 = new javax.swing.JButton();
 
     setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -39,6 +40,8 @@ public class Window extends javax.swing.JFrame {
 
     jButton2.setText("Button 2");
 
+    jButton3.setText("Button 3");
+
     javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
     getContentPane().setLayout(layout);
     layout.setHorizontalGroup(
@@ -46,15 +49,22 @@ public class Window extends javax.swing.JFrame {
       .addGroup(layout.createSequentialGroup()
         .addGap(46, 46, 46)
         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-          .addComponent(jButton2)
-          .addComponent(jButton1))
-        .addContainerGap(281, Short.MAX_VALUE))
+          .addGroup(layout.createSequentialGroup()
+            .addComponent(jButton2)
+            .addContainerGap(281, Short.MAX_VALUE))
+          .addGroup(layout.createSequentialGroup()
+            .addComponent(jButton1)
+            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jButton3)
+            .addGap(64, 64, 64))))
     );
     layout.setVerticalGroup(
       layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
       .addGroup(layout.createSequentialGroup()
         .addGap(56, 56, 56)
-        .addComponent(jButton1)
+        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+          .addComponent(jButton1)
+          .addComponent(jButton3))
         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
         .addComponent(jButton2)
         .addContainerGap(192, Short.MAX_VALUE))
@@ -105,5 +115,6 @@ public class Window extends javax.swing.JFrame {
   // Variables declaration - do not modify//GEN-BEGIN:variables
   private javax.swing.JButton jButton1;
   private javax.swing.JButton jButton2;
+  private javax.swing.JButton jButton3;
   // End of variables declaration//GEN-END:variables
 }
