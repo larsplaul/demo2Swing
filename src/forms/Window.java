@@ -30,6 +30,7 @@ public class Window extends javax.swing.JFrame {
     jButton3 = new javax.swing.JButton();
     jButton4 = new javax.swing.JButton();
     jButton5 = new javax.swing.JButton();
+    jButton6 = new javax.swing.JButton();
 
     setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -48,6 +49,8 @@ public class Window extends javax.swing.JFrame {
 
     jButton5.setText("jButton5");
 
+    jButton6.setText("jButton6");
+
     javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
     getContentPane().setLayout(layout);
     layout.setHorizontalGroup(
@@ -59,6 +62,7 @@ public class Window extends javax.swing.JFrame {
           .addComponent(jButton2))
         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 144, Short.MAX_VALUE)
         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+          .addComponent(jButton6)
           .addComponent(jButton5)
           .addComponent(jButton3)
           .addComponent(jButton4))
@@ -80,7 +84,9 @@ public class Window extends javax.swing.JFrame {
             .addComponent(jButton4)))
         .addGap(18, 18, 18)
         .addComponent(jButton5)
-        .addContainerGap(141, Short.MAX_VALUE))
+        .addGap(18, 18, 18)
+        .addComponent(jButton6)
+        .addContainerGap(100, Short.MAX_VALUE))
     );
 
     pack();
@@ -131,5 +137,6 @@ public class Window extends javax.swing.JFrame {
   private javax.swing.JButton jButton3;
   private javax.swing.JButton jButton4;
   private javax.swing.JButton jButton5;
+  private javax.swing.JButton jButton6;
   // End of variables declaration//GEN-END:variables
 }
