@@ -40,6 +40,10 @@ public class Window extends javax.swing.JFrame {
     jButton5 = new javax.swing.JButton();
     jButton4 = new javax.swing.JButton();
     jButton3 = new javax.swing.JButton();
+    jPanel4 = new javax.swing.JPanel();
+    jScrollPane1 = new javax.swing.JScrollPane();
+    jTextArea1 = new javax.swing.JTextArea();
+    jLabel1 = new javax.swing.JLabel();
 
     setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -125,6 +129,35 @@ public class Window extends javax.swing.JFrame {
 
     jTabbedPane1.addTab("tab2", jPanel2);
 
+    jTextArea1.setColumns(20);
+    jTextArea1.setRows(5);
+    jScrollPane1.setViewportView(jTextArea1);
+
+    jLabel1.setText("Some Text");
+
+    javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+    jPanel4.setLayout(jPanel4Layout);
+    jPanel4Layout.setHorizontalGroup(
+      jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+      .addGroup(jPanel4Layout.createSequentialGroup()
+        .addContainerGap()
+        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+          .addComponent(jLabel1)
+          .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 457, javax.swing.GroupLayout.PREFERRED_SIZE))
+        .addContainerGap(110, Short.MAX_VALUE))
+    );
+    jPanel4Layout.setVerticalGroup(
+      jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+      .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+        .addContainerGap()
+        .addComponent(jLabel1)
+        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
+        .addContainerGap(47, Short.MAX_VALUE))
+    );
+
+    jTabbedPane1.addTab("tab4", jPanel4);
+
     javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
     getContentPane().setLayout(layout);
     layout.setHorizontalGroup(
@@ -167,9 +200,13 @@ public class Window extends javax.swing.JFrame {
   private javax.swing.JButton jButton4;
   private javax.swing.JButton jButton5;
   private javax.swing.JButton jButton6;
+  private javax.swing.JLabel jLabel1;
   private javax.swing.JPanel jPanel1;
   private javax.swing.JPanel jPanel2;
   private javax.swing.JPanel jPanel3;
+  private javax.swing.JPanel jPanel4;
+  private javax.swing.JScrollPane jScrollPane1;
   private javax.swing.JTabbedPane jTabbedPane1;
+  private javax.swing.JTextArea jTextArea1;
   // End of variables declaration//GEN-END:variables
 }
